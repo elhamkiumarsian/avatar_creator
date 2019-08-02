@@ -1,0 +1,31 @@
+#preview {
+	min-height: 400px;
+	background: #ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	img {
+		margin: 0px auto;
+	}
+
+	.content {
+		position: relative;
+	}
+
+	button {
+		background: #ebebeb;
+	}
+
+	#randomise {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+
+	#download {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+	}
+}

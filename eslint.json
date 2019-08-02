@@ -1,0 +1,33 @@
+{
+	"plugins": [
+		"react"
+	],
+	"settings":
+	{
+		"react":
+		{
+			"version": "16.6.0"
+		}
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended"
+	],
+	"env":
+	{
+		"browser": true
+	},
+	"rules":
+	{
+		"no-unused-vars": "off"
+	},
+	"parserOptions":
+	{
+		"ecmaVersion": 7,
+		"sourceType": "module",
+		"ecmaFeatures":
+		{
+			"jsx": true
+		}
+	}
+}

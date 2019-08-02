@@ -1,0 +1,100 @@
+@import 'bourbon/bourbon.scss';
+@import 'neat/neat.scss';
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/solid.scss';
+
+.#{$fa-css-prefix}-bars:before {
+	content: fa-content($fa-var-bars);
+}
+
+.#{$fa-css-prefix}-home:before {
+	content: fa-content($fa-var-home);
+}
+
+.#{$fa-css-prefix}-check:before {
+	content: fa-content($fa-var-check);
+}
+
+.#{$fa-css-prefix}-users:before {
+	content: fa-content($fa-var-users);
+}
+
+.#{$fa-css-prefix}-folder:before {
+	content: fa-content($fa-var-folder);
+}
+
+.#{$fa-css-prefix}-list-alt:before {
+	content: fa-content($fa-var-list-alt);
+}
+
+.#{$fa-css-prefix}-search:before {
+	content: fa-content($fa-var-search);
+}
+
+.#{$fa-css-prefix}-pencil-alt:before {
+	content: fa-content($fa-var-pencil-alt);
+}
+
+.#{$fa-css-prefix}-user:before {
+	content: fa-content($fa-var-user);
+}
+
+.#{$fa-css-prefix}-file-export:before {
+	content: fa-content($fa-var-file-export);
+}
+
+.#{$fa-css-prefix}-cart-plus:before {
+	content: fa-content($fa-var-cart-plus);
+}
+
+.#{$fa-css-prefix}-plus:before {
+	content: fa-content($fa-var-plus);
+}
+
+.#{$fa-css-prefix}-minus:before {
+	content: fa-content($fa-var-minus);
+}
+
+.#{$fa-css-prefix}-times:before {
+	content: fa-content($fa-var-times);
+}
+
+.#{$fa-css-prefix}-equals:before {
+	content: fa-content($fa-var-equals);
+}
+
+.#{$fa-css-prefix}-divide:before {
+	content: fa-content($fa-var-divide);
+}
+
+.#{$fa-css-prefix}-backspace:before {
+	content: fa-content($fa-var-backspace);
+}
+
+.#{$fa-css-prefix}-volume-up:before {
+	content: fa-content($fa-var-volume-up);
+}
+
+.#{$fa-css-prefix}-door-open:before {
+	content: fa-content($fa-var-door-open);
+}
+
+.#{$fa-css-prefix}-shopping-cart:before {
+	content: fa-content($fa-var-shopping-cart);
+}
+
+.#{$fa-css-prefix}-users-cog:before {
+	content: fa-content($fa-var-users-cog);
+}
+
+.#{$fa-css-prefix}-chart-line:before {
+	content: fa-content($fa-var-chart-line);
+}
+
+.#{$fa-css-prefix}-arrow-up:before {
+	content: fa-content($fa-var-arrow-up);
+}
+
+.#{$fa-css-prefix}-arrow-down:before {
+	content: fa-content($fa-var-arrow-down);
+}

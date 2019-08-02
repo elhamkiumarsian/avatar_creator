@@ -1,0 +1,639 @@
+/*!
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@import url("https://fonts.googleapis.com/css?family=Saira+Extra+Condensed");
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; }
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em; }
+
+.fa-xs {
+  font-size: .75em; }
+
+.fa-sm {
+  font-size: .875em; }
+
+.fa-1x {
+  font-size: 1em; }
+
+.fa-2x {
+  font-size: 2em; }
+
+.fa-3x {
+  font-size: 3em; }
+
+.fa-4x {
+  font-size: 4em; }
+
+.fa-5x {
+  font-size: 5em; }
+
+.fa-6x {
+  font-size: 6em; }
+
+.fa-7x {
+  font-size: 7em; }
+
+.fa-8x {
+  font-size: 8em; }
+
+.fa-9x {
+  font-size: 9em; }
+
+.fa-10x {
+  font-size: 10em; }
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em; }
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0; }
+  .fa-ul > li {
+    position: relative; }
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit; }
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: .1em;
+  padding: .2em .25em .15em; }
+
+.fa-pull-left {
+  float: left; }
+
+.fa-pull-right {
+  float: right; }
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: .3em; }
+
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: .3em; }
+
+.fa-spin {
+  animation: fa-spin 2s infinite linear; }
+
+.fa-pulse {
+  animation: fa-spin 1s infinite steps(8); }
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  transform: rotate(90deg); }
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  transform: rotate(180deg); }
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  transform: rotate(270deg); }
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  transform: scale(-1, 1); }
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  transform: scale(1, -1); }
+
+.fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  transform: scale(-1, -1); }
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none; }
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  position: relative;
+  vertical-align: middle;
+  width: 2.5em; }
+
+.fa-stack-1x,
+.fa-stack-2x {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+
+.fa-stack-1x {
+  line-height: inherit; }
+
+.fa-stack-2x {
+  font-size: 2em; }
+
+.fa-inverse {
+  color: #fff; }
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*!
+ * Font Awesome Free 5.5.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+@font-face {
+  font-family: 'Font Awesome 5 Free';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../../assets/fonts/fa-solid-900.eot");
+  src: url("../../assets/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/fa-solid-900.woff2") format("woff2"), url("../../assets/fonts/fa-solid-900.woff") format("woff"), url("../../assets/fonts/fa-solid-900.ttf") format("truetype"), url("../../assets/fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900; }
+
+.fa-bars:before {
+  content: "\f0c9"; }
+
+.fa-home:before {
+  content: "\f015"; }
+
+.fa-check:before {
+  content: "\f00c"; }
+
+.fa-users:before {
+  content: "\f0c0"; }
+
+.fa-folder:before {
+  content: "\f07b"; }
+
+.fa-list-alt:before {
+  content: "\f022"; }
+
+.fa-search:before {
+  content: "\f002"; }
+
+.fa-pencil-alt:before {
+  content: "\f303"; }
+
+.fa-user:before {
+  content: "\f007"; }
+
+.fa-file-export:before {
+  content: "\f56e"; }
+
+.fa-cart-plus:before {
+  content: "\f217"; }
+
+.fa-plus:before {
+  content: "\f067"; }
+
+.fa-minus:before {
+  content: "\f068"; }
+
+.fa-times:before {
+  content: "\f00d"; }
+
+.fa-equals:before {
+  content: "\f52c"; }
+
+.fa-divide:before {
+  content: "\f529"; }
+
+.fa-backspace:before {
+  content: "\f55a"; }
+
+.fa-volume-up:before {
+  content: "\f028"; }
+
+.fa-door-open:before {
+  content: "\f52b"; }
+
+.fa-shopping-cart:before {
+  content: "\f07a"; }
+
+.fa-users-cog:before {
+  content: "\f509"; }
+
+.fa-chart-line:before {
+  content: "\f201"; }
+
+.fa-arrow-up:before {
+  content: "\f062"; }
+
+.fa-arrow-down:before {
+  content: "\f063"; }
+
+pre,
+code,
+samp,
+var {
+  font-family: "Saira Extra Condensed", sans-serif; }
+
+var {
+  font-weight: bold; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: normal;
+  margin: 10px 0px;
+  color: #54577A;
+  font-style: italic; }
+
+h1 {
+  font-size: 30px;
+  line-height: 40px; }
+
+h2 {
+  font-size: 28px;
+  line-height: 40px; }
+
+h3 {
+  font-size: 26px;
+  line-height: 30px; }
+
+h4 {
+  font-size: 24px;
+  line-height: 30px; }
+
+h5 {
+  font-size: 22px;
+  line-height: 25px; }
+
+h6 {
+  font-size: 20px;
+  line-height: 25px; }
+
+html,
+body,
+p {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 20px; }
+
+p {
+  margin: 10px 0px; }
+
+blockquote {
+  border-left: 5px solid grey;
+  padding: 10px 20px;
+  margin: 10px 0px; }
+
+a {
+  text-decoration: none;
+  color: #54577A;
+  cursor: pointer; }
+
+a:hover {
+  text-decoration: underline; }
+
+sup {
+  position: relative;
+  top: -5px;
+  font-size: 0.7rem; }
+
+sub {
+  position: relative;
+  top: 5px;
+  font-size: 0.7rem; }
+
+small {
+  font-size: 0.7rem; }
+
+mark {
+  background-color: #54577A;
+  color: #ffffff;
+  padding: 0px 5px; }
+
+hr {
+  background: black;
+  border: 0 none;
+  height: 1px;
+  margin: 10px 0px; }
+
+ul {
+  margin: 10px 0px; }
+  ul li {
+    list-style: disc outside none;
+    margin-left: 20px; }
+    ul li ul,
+    ul li ol {
+      margin: 0px; }
+
+ol {
+  margin: 10px 0px; }
+  ol li {
+    list-style: decimal outside none;
+    margin-left: 20px; }
+    ol li ul,
+    ol li ol {
+      margin: 0px; }
+
+dl dt {
+  font-weight: bold;
+  margin-top: 10px; }
+
+dl dd {
+  font-style: italic;
+  margin-bottom: 10px;
+  margin-left: 20px; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+table {
+  width: 100%;
+  border-collapse: collapse; }
+  table thead tr, table tfoot tr {
+    background: #ffffff; }
+    table thead tr th, table tfoot tr th {
+      color: #54577A;
+      text-align: left;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 10px 10px;
+      line-height: 20px; }
+    table thead tr th:last-child, table tfoot tr th:last-child {
+      text-align: right; }
+  table tbody tr td {
+    color: #54577A;
+    padding: 10px 10px;
+    line-height: 20px; }
+  table tbody tr:nth-child(odd) {
+    background-color: #F8F8F8; }
+  table tbody tr:nth-child(even) {
+    background-color: #ffffff; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #ebebeb; }
+
+.content {
+  width: 100%;
+  max-width: 800px;
+  margin: 0px auto; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+button {
+  width: 20vw;
+  height: 20vw;
+  max-width: 60px;
+  max-height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  padding: 0;
+  cursor: pointer; }
+
+.content .row::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+@media (min-width: 1400px) {
+  .content .third {
+    width: calc(33.3333333333% - 26.6666666667px);
+    float: left;
+    margin-left: 20px; }
+  .content .half {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px; } }
+
+@media (max-width: 1399px) {
+  .content .third {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; }
+  .content .half {
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px; } }
+
+.content .full {
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px; }
+
+.sketch-picker {
+  width: 100% !important;
+  max-width: 380px;
+  margin: 10px auto; }
+  .sketch-picker > div:first-child {
+    padding-bottom: 50% !important; }
+  .sketch-picker div:nth-child(3) {
+    display: none !important; }
+
+#hideColors {
+  display: block;
+  font-family: "Saira Extra Condensed", sans-serif;
+  background: #ccc;
+  width: 120px;
+  height: 60px;
+  max-width: 120px;
+  max-height: 60px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 20px auto; }
+
+#colorPickers {
+  display: none;
+  padding: 10px;
+  background: #ffffff; }
+  #colorPickers #skinTonesPicker, #colorPickers #hairhexPicker, #colorPickers #shirthexPicker, #colorPickers #pantshexPicker, #colorPickers #decorationhexPicker {
+    display: none; }
+
+#tabContent #head, #tabContent #face, #tabContent #top, #tabContent #bottom {
+  display: none; }
+
+.state_head #tabContent #head {
+  display: block; }
+
+.state_face #tabContent #face {
+  display: block; }
+
+.state_top #tabContent #top {
+  display: block; }
+
+.state_bottom #tabContent #bottom {
+  display: block; }
+
+.state_skinTonesPicker #tabs {
+  display: none; }
+
+.state_skinTonesPicker #colorPickers {
+  display: block; }
+  .state_skinTonesPicker #colorPickers #skinTonesPicker {
+    display: block; }
+
+.state_hairhexPicker #tabs {
+  display: none; }
+
+.state_hairhexPicker #colorPickers {
+  display: block; }
+  .state_hairhexPicker #colorPickers #hairhexPicker {
+    display: block; }
+
+.state_shirthexPicker #tabs {
+  display: none; }
+
+.state_shirthexPicker #colorPickers {
+  display: block; }
+  .state_shirthexPicker #colorPickers #shirthexPicker {
+    display: block; }
+
+.state_pantshexPicker #tabs {
+  display: none; }
+
+.state_pantshexPicker #colorPickers {
+  display: block; }
+  .state_pantshexPicker #colorPickers #pantshexPicker {
+    display: block; }
+
+.state_decorationhexPicker #tabs {
+  display: none; }
+
+.state_decorationhexPicker #colorPickers {
+  display: block; }
+  .state_decorationhexPicker #colorPickers #decorationhexPicker {
+    display: block; }
+
+#preview {
+  min-height: 400px;
+  background: #ffffff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; }
+  #preview img {
+    margin: 0px auto; }
+  #preview .content {
+    position: relative; }
+  #preview button {
+    background: #ebebeb; }
+  #preview #randomise {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+  #preview #download {
+    position: absolute;
+    top: 20px;
+    left: 20px; }
+
+#tabs {
+  background: #f5f5f5;
+  margin-bottom: 2px; }
+  #tabs .tab {
+    display: block;
+    float: left;
+    width: 25%;
+    text-align: center; }
+    #tabs .tab button {
+      display: block;
+      margin: 0px auto;
+      text-align: center;
+      border: none; }
+      #tabs .tab button img {
+        margin: 0px auto;
+        padding: 5px;
+        box-sizing: border-box; }
+
+#tabContent {
+  background: #ebebeb; }
+  #tabContent .row {
+    background: #d8d8d8;
+    margin-bottom: 2px;
+    height: 20vw;
+    max-height: 60px;
+    position: relative; }
+    #tabContent .row > button {
+      display: block;
+      float: left; }
+      #tabContent .row > button:first-child {
+        position: absolute;
+        left: 0px;
+        top: 0px; }
+        #tabContent .row > button:first-child img {
+          float: left; }
+      #tabContent .row > button:last-child {
+        position: absolute;
+        right: 0px;
+        top: 0px; }
+        #tabContent .row > button:last-child img {
+          float: right; }
+    #tabContent .row p {
+      position: absolute;
+      margin: 0;
+      left: 50%;
+      top: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      text-transform: uppercase;
+      font-size: 30px;
+      line-height: 30px;
+      vertical-align: middle; }
+      #tabContent .row p button {
+        vertical-align: middle;
+        display: inline;
+        max-height: 40px;
+        max-width: 40px;
+        margin-right: 10px; }
+        #tabContent .row p button img {
+          max-height: 40px;
+          max-width: 40px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,202 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background: #ebebeb;
+}
+
+.content {
+	@include grid-container;
+	width: 100%;
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+button {
+	width: 20vw;
+	height: 20vw;
+	max-width: 60px;
+	max-height: 60px;
+	border: none;
+	border-radius: 50%;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+$thirds: (columns: 3, gutter: 20px);
+$halves: (columns: 2, gutter: 20px);
+
+.content .row {
+	@include clearfix;
+}
+
+@media (min-width: 1400px) {
+	.content .third {
+		@include grid-column(1, $thirds);
+	}
+
+	.content .half {
+		@include grid-column(1, $halves);
+	}
+}
+
+@media (max-width: 1399px) {
+	.content .third {
+		@include grid-column(3, $thirds);
+	}
+
+	.content .half {
+		@include grid-column(2, $halves);
+	}
+}
+
+.content .full {
+	@include grid-column(3, $thirds);
+}
+
+.sketch-picker {
+	width: 100% !important;
+	max-width: 380px;
+	margin: 10px auto;
+
+	>div:first-child {
+		padding-bottom: 50% !important;
+	}
+
+	div:nth-child(3) {
+		display: none !important;
+	}
+}
+
+#hideColors {
+	display: block;
+	font-family: $font_base;
+	background: #ccc;
+	width: 120px;
+	height: 60px;
+	max-width: 120px;
+	max-height: 60px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin: 20px auto;
+}
+
+#colorPickers {
+	display: none;
+	padding: 10px;
+	background: #ffffff;
+
+	#skinTonesPicker, #hairhexPicker, #shirthexPicker, #pantshexPicker, #decorationhexPicker {
+		display: none;
+	}
+}
+
+#tabContent {
+	#head, #face, #top, #bottom {
+		display: none;
+	}
+}
+
+.state_head {
+	#tabContent {
+		#head {
+			display: block;
+		}
+	}
+}
+
+.state_face {
+	#tabContent {
+		#face {
+			display: block;
+		}
+	}
+}
+
+.state_top {
+	#tabContent {
+		#top {
+			display: block;
+		}
+	}
+}
+
+.state_bottom {
+	#tabContent {
+		#bottom {
+			display: block;
+		}
+	}
+}
+
+.state_skinTonesPicker {
+	#tabs {
+		display: none;
+	}
+
+	#colorPickers {
+		display: block;
+
+		#skinTonesPicker {
+			display: block;
+		}
+	}
+}
+
+.state_hairhexPicker {
+	#tabs {
+		display: none;
+	}
+
+	#colorPickers {
+		display: block;
+
+		#hairhexPicker {
+			display: block;
+		}
+	}
+}
+
+.state_shirthexPicker {
+	#tabs {
+		display: none;
+	}
+
+	#colorPickers {
+		display: block;
+
+		#shirthexPicker {
+			display: block;
+		}
+	}
+}
+
+.state_pantshexPicker {
+	#tabs {
+		display: none;
+	}
+
+	#colorPickers {
+		display: block;
+
+		#pantshexPicker {
+			display: block;
+		}
+	}
+}
+
+.state_decorationhexPicker {
+	#tabs {
+		display: none;
+	}
+
+	#colorPickers {
+		display: block;
+
+		#decorationhexPicker {
+			display: block;
+		}
+	}
+}

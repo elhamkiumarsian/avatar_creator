@@ -1,0 +1,60 @@
+pipelines:
+  branches:
+    develop:
+      - step:
+          name: JS Build
+          image: node:10.13.0
+          caches:
+            - node
+          script:
+            - npm install
+            - npm install -g grunt-cli
+            - grunt publish
+          artifacts:
+            - dist/**
+      - step:
+          # set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY as environment variables
+          name: Deploy to AWS
+          deployment: staging   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          image: atlassian/pipelines-awscli
+          script:
+            - aws s3 sync --delete ./dist s3://$S3_BUCKET-testing
+      - step:
+          # set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY as environment variables
+          name: Deploy to AWS
+          deployment: production   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          image: atlassian/pipelines-awscli
+          script:
+            - aws deploy push --application-name $APPLICATION_NAME --s3-location s3://$S3_APP_BUCKET/testing.zip --ignore-hidden-files
+            - aws deploy create-deployment --application-name $APPLICATION_NAME --s3-location bucket=$S3_APP_BUCKET,key=testing.zip,bundleType=zip --deployment-group-name testing
+    staging:
+      - step:
+          name: JS Build
+          image: node:10.13.0
+          caches:
+            - node
+          script:
+            - npm install
+            - npm install -g grunt-cli
+            - grunt publish
+          artifacts:
+            - dist/**
+      - step:
+          # set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY as environment variables
+          name: Deploy to AWS
+          deployment: staging   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          image: atlassian/pipelines-awscli
+          script:
+            - aws s3 sync --delete ./dist s3://$S3_BUCKET-staging
+      - step:
+          # set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY as environment variables
+          name: Deploy to AWS
+          deployment: production   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          image: atlassian/pipelines-awscli
+          script:
+            - aws deploy push --application-name $APPLICATION_NAME --s3-location s3://$S3_APP_BUCKET/staging.zip --ignore-hidden-files
+            - aws deploy create-deployment --application-name $APPLICATION_NAME --s3-location bucket=$S3_APP_BUCKET,key=staging.zip,bundleType=zip --deployment-group-name staging
