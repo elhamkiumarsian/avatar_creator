@@ -40,7 +40,7 @@
     "jsdom": "^9.3.0",
     "load-grunt-tasks": "^4.0.0",
     "localforage": "^1.7.3",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "mathjs": "^5.2.3",
     "mocha": "^2.5.3",
     "node-sass": "^4.10.0",
