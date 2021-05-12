@@ -41,7 +41,7 @@
     "load-grunt-tasks": "^4.0.0",
     "localforage": "^1.7.3",
     "lodash": "^4.17.11",
-    "mathjs": "^5.2.3",
+    "mathjs": "^7.5.1",
     "mocha": "^2.5.3",
     "node-sass": "^4.10.0",
     "react-color": "^2.14.1",
