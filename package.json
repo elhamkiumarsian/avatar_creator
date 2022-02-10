@@ -43,7 +43,7 @@
     "lodash": "^4.17.11",
     "mathjs": "^5.2.3",
     "mocha": "^2.5.3",
-    "node-sass": "^4.10.0",
+    "node-sass": "^7.0.0",
     "react-color": "^2.14.1",
     "react-dom": "^15.6.2",
     "react-router-dom": "^4.3.1",
